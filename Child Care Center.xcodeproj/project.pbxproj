@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4F94AA1F22F2BAF50063CE99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA1E22F2BAF50063CE99 /* AppDelegate.swift */; };
-		4F94AA2122F2BAF50063CE99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA2022F2BAF50063CE99 /* ViewController.swift */; };
-		4F94AA2422F2BAF50063CE99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F94AA2222F2BAF50063CE99 /* Main.storyboard */; };
+		4F94AA2122F2BAF50063CE99 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA2022F2BAF50063CE99 /* LoginVC.swift */; };
 		4F94AA2622F2BAF80063CE99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F94AA2522F2BAF80063CE99 /* Assets.xcassets */; };
 		4F94AA2922F2BAF80063CE99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F94AA2722F2BAF80063CE99 /* LaunchScreen.storyboard */; };
 		4F94AA3422F2BAF80063CE99 /* Child_Care_CenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA3322F2BAF80063CE99 /* Child_Care_CenterTests.swift */; };
 		4F94AA3F22F2BAF80063CE99 /* Child_Care_CenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA3E22F2BAF80063CE99 /* Child_Care_CenterUITests.swift */; };
+		4F94AA4F22F2C9E00063CE99 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA4E22F2C9E00063CE99 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,7 @@
 /* Begin PBXFileReference section */
 		4F94AA1B22F2BAF50063CE99 /* Child Care Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Child Care Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F94AA1E22F2BAF50063CE99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F94AA2022F2BAF50063CE99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4F94AA2322F2BAF50063CE99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F94AA2022F2BAF50063CE99 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4F94AA2522F2BAF80063CE99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F94AA2822F2BAF80063CE99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F94AA2A22F2BAF80063CE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		4F94AA3A22F2BAF80063CE99 /* Child Care CenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Child Care CenterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F94AA3E22F2BAF80063CE99 /* Child_Care_CenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child_Care_CenterUITests.swift; sourceTree = "<group>"; };
 		4F94AA4022F2BAF80063CE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F94AA4E22F2C9E00063CE99 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +97,10 @@
 		4F94AA1D22F2BAF50063CE99 /* Child Care Center */ = {
 			isa = PBXGroup;
 			children = (
+				4F94AA5022F2D73C0063CE99 /* Model */,
+				4F94AA4C22F2C9A80063CE99 /* View */,
+				4F94AA4D22F2C9B30063CE99 /* Controller */,
 				4F94AA1E22F2BAF50063CE99 /* AppDelegate.swift */,
-				4F94AA2022F2BAF50063CE99 /* ViewController.swift */,
-				4F94AA2222F2BAF50063CE99 /* Main.storyboard */,
 				4F94AA2522F2BAF80063CE99 /* Assets.xcassets */,
 				4F94AA2722F2BAF80063CE99 /* LaunchScreen.storyboard */,
 				4F94AA2A22F2BAF80063CE99 /* Info.plist */,
@@ -123,6 +124,29 @@
 				4F94AA4022F2BAF80063CE99 /* Info.plist */,
 			);
 			path = "Child Care CenterUITests";
+			sourceTree = "<group>";
+		};
+		4F94AA4C22F2C9A80063CE99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F94AA4E22F2C9E00063CE99 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F94AA4D22F2C9B30063CE99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F94AA2022F2BAF50063CE99 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F94AA5022F2D73C0063CE99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +255,6 @@
 			files = (
 				4F94AA2922F2BAF80063CE99 /* LaunchScreen.storyboard in Resources */,
 				4F94AA2622F2BAF80063CE99 /* Assets.xcassets in Resources */,
-				4F94AA2422F2BAF50063CE99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F94AA2122F2BAF50063CE99 /* ViewController.swift in Sources */,
+				4F94AA4F22F2C9E00063CE99 /* LoginView.swift in Sources */,
+				4F94AA2122F2BAF50063CE99 /* LoginVC.swift in Sources */,
 				4F94AA1F22F2BAF50063CE99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4F94AA2222F2BAF50063CE99 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F94AA2322F2BAF50063CE99 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4F94AA2722F2BAF80063CE99 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gis.Child-Care-Center";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,7 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gis.Child-Care-Center";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
