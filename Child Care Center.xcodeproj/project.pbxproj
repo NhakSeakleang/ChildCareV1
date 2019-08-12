@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013AD755A2D897D501983A97 /* Pods_Child_Care_CenterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D3A7A126868612B743BA82 /* Pods_Child_Care_CenterUITests.framework */; };
+		4F4BB01622FD30FC007E9A3F /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BB01522FD30FC007E9A3F /* MenuOption.swift */; };
+		4F4BB01822FD456B007E9A3F /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BB01722FD456B007E9A3F /* MainController.swift */; };
+		4F4BB01A22FD47A0007E9A3F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BB01922FD47A0007E9A3F /* Protocols.swift */; };
+		4F4BB01C22FD518F007E9A3F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BB01B22FD518F007E9A3F /* MenuView.swift */; };
+		4F4BB01E22FD53BF007E9A3F /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BB01D22FD53BF007E9A3F /* MenuVC.swift */; };
+		4F4BB02022FD554F007E9A3F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BB01F22FD554F007E9A3F /* MenuCell.swift */; };
+		4F571AB922FBD78A00DB64DD /* CustomMarkerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F571AB822FBD78A00DB64DD /* CustomMarkerPreview.swift */; };
+		4F571ABC22FC119A00DB64DD /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F571ABB22FC119A00DB64DD /* DetailVC.swift */; };
+		4F571ABE22FC11D800DB64DD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F571ABD22FC11D800DB64DD /* DetailView.swift */; };
+		4F7FA1AF22F3F81B0033B993 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA1AE22F3F81B0033B993 /* SignUpVC.swift */; };
+		4F7FA1B122F3F8640033B993 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA1B022F3F8640033B993 /* SignUpView.swift */; };
+		4F7FA1B522F4146F0033B993 /* ParentsHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA1B422F4146F0033B993 /* ParentsHomeVC.swift */; };
+		4F7FA1B922F414C10033B993 /* ParentsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA1B822F414C10033B993 /* ParentsHomeView.swift */; };
 		4F94AA1F22F2BAF50063CE99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA1E22F2BAF50063CE99 /* AppDelegate.swift */; };
 		4F94AA2122F2BAF50063CE99 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA2022F2BAF50063CE99 /* LoginVC.swift */; };
 		4F94AA2622F2BAF80063CE99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F94AA2522F2BAF80063CE99 /* Assets.xcassets */; };
@@ -14,6 +28,9 @@
 		4F94AA3422F2BAF80063CE99 /* Child_Care_CenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA3322F2BAF80063CE99 /* Child_Care_CenterTests.swift */; };
 		4F94AA3F22F2BAF80063CE99 /* Child_Care_CenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA3E22F2BAF80063CE99 /* Child_Care_CenterUITests.swift */; };
 		4F94AA4F22F2C9E00063CE99 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA4E22F2C9E00063CE99 /* LoginView.swift */; };
+		4FB93A3922FAE03700C958F6 /* CustomMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB93A3822FAE03700C958F6 /* CustomMarkerView.swift */; };
+		607F4FE3822193440CD283E0 /* Pods_Child_Care_Center.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53F9B97A0FE0C9E05A386D0 /* Pods_Child_Care_Center.framework */; };
+		B30D774124F42903207B9EA5 /* Pods_Child_Care_CenterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DDBEECAA98D39FF4D1706B /* Pods_Child_Care_CenterTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +51,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1479088DBD0C1C7755341BEB /* Pods-Child Care CenterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care CenterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care CenterTests/Pods-Child Care CenterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3361B243D522A0405AD1A8A1 /* Pods-Child Care CenterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care CenterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care CenterTests/Pods-Child Care CenterTests.release.xcconfig"; sourceTree = "<group>"; };
+		34FBE2F32AB7032375A3CE59 /* Pods-Child Care CenterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care CenterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care CenterUITests/Pods-Child Care CenterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41D3A7A126868612B743BA82 /* Pods_Child_Care_CenterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Child_Care_CenterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4BB01522FD30FC007E9A3F /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		4F4BB01722FD456B007E9A3F /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		4F4BB01922FD47A0007E9A3F /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		4F4BB01B22FD518F007E9A3F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		4F4BB01D22FD53BF007E9A3F /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		4F4BB01F22FD554F007E9A3F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		4F571AB822FBD78A00DB64DD /* CustomMarkerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerPreview.swift; sourceTree = "<group>"; };
+		4F571ABB22FC119A00DB64DD /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailVC.swift; path = ../../View/Parents/DetailVC.swift; sourceTree = "<group>"; };
+		4F571ABD22FC11D800DB64DD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4F7FA1AE22F3F81B0033B993 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		4F7FA1B022F3F8640033B993 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4F7FA1B422F4146F0033B993 /* ParentsHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsHomeVC.swift; sourceTree = "<group>"; };
+		4F7FA1B822F414C10033B993 /* ParentsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsHomeView.swift; sourceTree = "<group>"; };
 		4F94AA1B22F2BAF50063CE99 /* Child Care Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Child Care Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F94AA1E22F2BAF50063CE99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F94AA2022F2BAF50063CE99 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -47,6 +81,12 @@
 		4F94AA3E22F2BAF80063CE99 /* Child_Care_CenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child_Care_CenterUITests.swift; sourceTree = "<group>"; };
 		4F94AA4022F2BAF80063CE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F94AA4E22F2C9E00063CE99 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4FB93A3822FAE03700C958F6 /* CustomMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
+		6D50B78C6D675AEFC564DD8F /* Pods-Child Care CenterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care CenterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care CenterUITests/Pods-Child Care CenterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		82DDBEECAA98D39FF4D1706B /* Pods_Child_Care_CenterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Child_Care_CenterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F607850BEC3F1AEE9E2F0A0 /* Pods-Child Care Center.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care Center.release.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care Center/Pods-Child Care Center.release.xcconfig"; sourceTree = "<group>"; };
+		CA3A78DE720418EA1CFDBD44 /* Pods-Child Care Center.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care Center.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care Center/Pods-Child Care Center.debug.xcconfig"; sourceTree = "<group>"; };
+		F53F9B97A0FE0C9E05A386D0 /* Pods_Child_Care_Center.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Child_Care_Center.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607F4FE3822193440CD283E0 /* Pods_Child_Care_Center.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30D774124F42903207B9EA5 /* Pods_Child_Care_CenterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +110,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013AD755A2D897D501983A97 /* Pods_Child_Care_CenterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A79F2B859B3BB8BECEABAC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA3A78DE720418EA1CFDBD44 /* Pods-Child Care Center.debug.xcconfig */,
+				8F607850BEC3F1AEE9E2F0A0 /* Pods-Child Care Center.release.xcconfig */,
+				1479088DBD0C1C7755341BEB /* Pods-Child Care CenterTests.debug.xcconfig */,
+				3361B243D522A0405AD1A8A1 /* Pods-Child Care CenterTests.release.xcconfig */,
+				34FBE2F32AB7032375A3CE59 /* Pods-Child Care CenterUITests.debug.xcconfig */,
+				6D50B78C6D675AEFC564DD8F /* Pods-Child Care CenterUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F571ABA22FC0C3C00DB64DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F4BB01922FD47A0007E9A3F /* Protocols.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4F7FA1B222F4141E0033B993 /* Parents */ = {
+			isa = PBXGroup;
+			children = (
+				4F571ABB22FC119A00DB64DD /* DetailVC.swift */,
+				4F7FA1B422F4146F0033B993 /* ParentsHomeVC.swift */,
+				4F4BB01722FD456B007E9A3F /* MainController.swift */,
+				4F4BB01D22FD53BF007E9A3F /* MenuVC.swift */,
+			);
+			path = Parents;
+			sourceTree = "<group>";
+		};
+		4F7FA1B322F414280033B993 /* Parents */ = {
+			isa = PBXGroup;
+			children = (
+				4F7FA1B822F414C10033B993 /* ParentsHomeView.swift */,
+				4F571ABD22FC11D800DB64DD /* DetailView.swift */,
+				4F4BB01B22FD518F007E9A3F /* MenuView.swift */,
+			);
+			path = Parents;
+			sourceTree = "<group>";
+		};
 		4F94AA1222F2BAF50063CE99 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +166,8 @@
 				4F94AA3222F2BAF80063CE99 /* Child Care CenterTests */,
 				4F94AA3D22F2BAF80063CE99 /* Child Care CenterUITests */,
 				4F94AA1C22F2BAF50063CE99 /* Products */,
+				0A79F2B859B3BB8BECEABAC7 /* Pods */,
+				B725203992C09EFE39EC2797 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +184,7 @@
 		4F94AA1D22F2BAF50063CE99 /* Child Care Center */ = {
 			isa = PBXGroup;
 			children = (
+				4F571ABA22FC0C3C00DB64DD /* Utils */,
 				4F94AA5022F2D73C0063CE99 /* Model */,
 				4F94AA4C22F2C9A80063CE99 /* View */,
 				4F94AA4D22F2C9B30063CE99 /* Controller */,
@@ -129,7 +217,10 @@
 		4F94AA4C22F2C9A80063CE99 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4FB93A3722FAE00A00C958F6 /* Custom */,
+				4F7FA1B322F414280033B993 /* Parents */,
 				4F94AA4E22F2C9E00063CE99 /* LoginView.swift */,
+				4F7FA1B022F3F8640033B993 /* SignUpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,7 +228,9 @@
 		4F94AA4D22F2C9B30063CE99 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4F7FA1B222F4141E0033B993 /* Parents */,
 				4F94AA2022F2BAF50063CE99 /* LoginVC.swift */,
+				4F7FA1AE22F3F81B0033B993 /* SignUpVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,8 +238,29 @@
 		4F94AA5022F2D73C0063CE99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F4BB01522FD30FC007E9A3F /* MenuOption.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4FB93A3722FAE00A00C958F6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				4FB93A3822FAE03700C958F6 /* CustomMarkerView.swift */,
+				4F571AB822FBD78A00DB64DD /* CustomMarkerPreview.swift */,
+				4F4BB01F22FD554F007E9A3F /* MenuCell.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		B725203992C09EFE39EC2797 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F53F9B97A0FE0C9E05A386D0 /* Pods_Child_Care_Center.framework */,
+				82DDBEECAA98D39FF4D1706B /* Pods_Child_Care_CenterTests.framework */,
+				41D3A7A126868612B743BA82 /* Pods_Child_Care_CenterUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F94AA4322F2BAF80063CE99 /* Build configuration list for PBXNativeTarget "Child Care Center" */;
 			buildPhases = (
+				EF073AEBF7D64EC54F91B610 /* [CP] Check Pods Manifest.lock */,
 				4F94AA1722F2BAF50063CE99 /* Sources */,
 				4F94AA1822F2BAF50063CE99 /* Frameworks */,
 				4F94AA1922F2BAF50063CE99 /* Resources */,
+				5CF06EEB6E9707C5F5FF02D7 /* [CP] Embed Pods Frameworks */,
+				9B3362EECFCA9D009E2FD71F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +290,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F94AA4622F2BAF80063CE99 /* Build configuration list for PBXNativeTarget "Child Care CenterTests" */;
 			buildPhases = (
+				BAAE45B4D987E93B9D8C1F23 /* [CP] Check Pods Manifest.lock */,
 				4F94AA2B22F2BAF80063CE99 /* Sources */,
 				4F94AA2C22F2BAF80063CE99 /* Frameworks */,
 				4F94AA2D22F2BAF80063CE99 /* Resources */,
+				165748DFE9A8A12B65FD56FF /* [CP] Embed Pods Frameworks */,
+				0A0A43D1051C6DC24AAEB3F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +311,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F94AA4922F2BAF80063CE99 /* Build configuration list for PBXNativeTarget "Child Care CenterUITests" */;
 			buildPhases = (
+				3EB266B735361C105B6827A2 /* [CP] Check Pods Manifest.lock */,
 				4F94AA3622F2BAF80063CE99 /* Sources */,
 				4F94AA3722F2BAF80063CE99 /* Frameworks */,
 				4F94AA3822F2BAF80063CE99 /* Resources */,
+				DA26587B751F850EAEF581FF /* [CP] Embed Pods Frameworks */,
+				B8114EBA57ACFC5BB108BB8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,13 +340,16 @@
 				TargetAttributes = {
 					4F94AA1A22F2BAF50063CE99 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 					4F94AA2E22F2BAF80063CE99 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 4F94AA1A22F2BAF50063CE99;
 					};
 					4F94AA3922F2BAF80063CE99 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 4F94AA1A22F2BAF50063CE99;
 					};
 				};
@@ -274,13 +400,179 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A0A43D1051C6DC24AAEB3F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Child Care CenterTests/Pods-Child Care CenterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		165748DFE9A8A12B65FD56FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Child Care CenterTests/Pods-Child Care CenterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EB266B735361C105B6827A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Child Care CenterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CF06EEB6E9707C5F5FF02D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Child Care Center/Pods-Child Care Center-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B3362EECFCA9D009E2FD71F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Child Care Center/Pods-Child Care Center-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Child Care Center/Pods-Child Care Center-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8114EBA57ACFC5BB108BB8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Child Care CenterUITests/Pods-Child Care CenterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAAE45B4D987E93B9D8C1F23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Child Care CenterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA26587B751F850EAEF581FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Child Care CenterUITests/Pods-Child Care CenterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF073AEBF7D64EC54F91B610 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Child Care Center-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F94AA1722F2BAF50063CE99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F7FA1B922F414C10033B993 /* ParentsHomeView.swift in Sources */,
+				4F4BB01622FD30FC007E9A3F /* MenuOption.swift in Sources */,
+				4FB93A3922FAE03700C958F6 /* CustomMarkerView.swift in Sources */,
+				4F571AB922FBD78A00DB64DD /* CustomMarkerPreview.swift in Sources */,
+				4F7FA1AF22F3F81B0033B993 /* SignUpVC.swift in Sources */,
+				4F4BB01E22FD53BF007E9A3F /* MenuVC.swift in Sources */,
+				4F7FA1B122F3F8640033B993 /* SignUpView.swift in Sources */,
+				4F571ABE22FC11D800DB64DD /* DetailView.swift in Sources */,
+				4F571ABC22FC119A00DB64DD /* DetailVC.swift in Sources */,
 				4F94AA4F22F2C9E00063CE99 /* LoginView.swift in Sources */,
+				4F4BB01A22FD47A0007E9A3F /* Protocols.swift in Sources */,
+				4F4BB01C22FD518F007E9A3F /* MenuView.swift in Sources */,
+				4F7FA1B522F4146F0033B993 /* ParentsHomeVC.swift in Sources */,
 				4F94AA2122F2BAF50063CE99 /* LoginVC.swift in Sources */,
+				4F4BB01822FD456B007E9A3F /* MainController.swift in Sources */,
+				4F4BB02022FD554F007E9A3F /* MenuCell.swift in Sources */,
 				4F94AA1F22F2BAF50063CE99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,9 +738,11 @@
 		};
 		4F94AA4422F2BAF80063CE99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA3A78DE720418EA1CFDBD44 /* Pods-Child Care Center.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48M355K98D;
 				INFOPLIST_FILE = "Child Care Center/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,16 +750,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gis.Child-Care-Center";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4F94AA4522F2BAF80063CE99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F607850BEC3F1AEE9E2F0A0 /* Pods-Child Care Center.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48M355K98D;
 				INFOPLIST_FILE = "Child Care Center/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,13 +769,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gis.Child-Care-Center";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		4F94AA4722F2BAF80063CE99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1479088DBD0C1C7755341BEB /* Pods-Child Care CenterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,7 +789,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gis.Child-Care-CenterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Child Care Center.app/Child Care Center";
 			};
@@ -500,6 +797,7 @@
 		};
 		4F94AA4822F2BAF80063CE99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3361B243D522A0405AD1A8A1 /* Pods-Child Care CenterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,7 +810,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gis.Child-Care-CenterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Child Care Center.app/Child Care Center";
 			};
@@ -520,6 +818,7 @@
 		};
 		4F94AA4A22F2BAF80063CE99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34FBE2F32AB7032375A3CE59 /* Pods-Child Care CenterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,7 +830,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gis.Child-Care-CenterUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Child Care Center";
 			};
@@ -539,6 +838,7 @@
 		};
 		4F94AA4B22F2BAF80063CE99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D50B78C6D675AEFC564DD8F /* Pods-Child Care CenterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,7 +850,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gis.Child-Care-CenterUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Child Care Center";
 			};

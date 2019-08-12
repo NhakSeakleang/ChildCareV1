@@ -9,12 +9,28 @@
 import UIKit
 
 class LoginVC: UIViewController {
+    
+    private var loginView: LoginView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view = LoginView()
+        loginView = LoginView()
+        self.view = loginView
     }
-
+    
+    override func viewDidLayoutSubviews() {
+        // set up events
+        loginView.btnLogIn.addTarget(self, action: #selector(btnLogInClick), for: .touchUpInside)
+        loginView.btnSignUp.addTarget(self, action: #selector(btnSignUpClick), for: .touchUpInside)
+    }
+    
+    @objc func btnLogInClick() {
+        present(MainController(), animated: true, completion: nil)
+    }
+    
+    @objc func btnSignUpClick() {
+        navigationController?.pushViewController(SignUpVC(), animated: true)
+    }
 
 }
 

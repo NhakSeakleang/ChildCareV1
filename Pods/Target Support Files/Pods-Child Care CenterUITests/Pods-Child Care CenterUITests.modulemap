@@ -1,0 +1,6 @@
+framework module Pods_Child_Care_CenterUITests {
+  umbrella header "Pods-Child Care CenterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
