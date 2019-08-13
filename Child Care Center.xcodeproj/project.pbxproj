@@ -29,6 +29,11 @@
 		4F94AA3F22F2BAF80063CE99 /* Child_Care_CenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA3E22F2BAF80063CE99 /* Child_Care_CenterUITests.swift */; };
 		4F94AA4F22F2C9E00063CE99 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F94AA4E22F2C9E00063CE99 /* LoginView.swift */; };
 		4FB93A3922FAE03700C958F6 /* CustomMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB93A3822FAE03700C958F6 /* CustomMarkerView.swift */; };
+		4FCD26EC230170C50069AA1F /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD26EB230170C50069AA1F /* ProfileVC.swift */; };
+		4FCD26EE230170D60069AA1F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD26ED230170D60069AA1F /* ProfileView.swift */; };
+		4FCD26F0230174090069AA1F /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD26EF230174090069AA1F /* MessageVC.swift */; };
+		4FCD26F22301768A0069AA1F /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD26F12301768A0069AA1F /* NotificationVC.swift */; };
+		4FCD26F4230177000069AA1F /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD26F3230177000069AA1F /* SettingsVC.swift */; };
 		607F4FE3822193440CD283E0 /* Pods_Child_Care_Center.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53F9B97A0FE0C9E05A386D0 /* Pods_Child_Care_Center.framework */; };
 		B30D774124F42903207B9EA5 /* Pods_Child_Care_CenterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DDBEECAA98D39FF4D1706B /* Pods_Child_Care_CenterTests.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +87,11 @@
 		4F94AA4022F2BAF80063CE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F94AA4E22F2C9E00063CE99 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4FB93A3822FAE03700C958F6 /* CustomMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
+		4FCD26EB230170C50069AA1F /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4FCD26ED230170D60069AA1F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4FCD26EF230174090069AA1F /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		4FCD26F12301768A0069AA1F /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		4FCD26F3230177000069AA1F /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		6D50B78C6D675AEFC564DD8F /* Pods-Child Care CenterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care CenterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care CenterUITests/Pods-Child Care CenterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		82DDBEECAA98D39FF4D1706B /* Pods_Child_Care_CenterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Child_Care_CenterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F607850BEC3F1AEE9E2F0A0 /* Pods-Child Care Center.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care Center.release.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care Center/Pods-Child Care Center.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +155,10 @@
 				4F7FA1B422F4146F0033B993 /* ParentsHomeVC.swift */,
 				4F4BB01722FD456B007E9A3F /* MainController.swift */,
 				4F4BB01D22FD53BF007E9A3F /* MenuVC.swift */,
+				4FCD26EB230170C50069AA1F /* ProfileVC.swift */,
+				4FCD26EF230174090069AA1F /* MessageVC.swift */,
+				4FCD26F12301768A0069AA1F /* NotificationVC.swift */,
+				4FCD26F3230177000069AA1F /* SettingsVC.swift */,
 			);
 			path = Parents;
 			sourceTree = "<group>";
@@ -155,6 +169,7 @@
 				4F7FA1B822F414C10033B993 /* ParentsHomeView.swift */,
 				4F571ABD22FC11D800DB64DD /* DetailView.swift */,
 				4F4BB01B22FD518F007E9A3F /* MenuView.swift */,
+				4FCD26ED230170D60069AA1F /* ProfileView.swift */,
 			);
 			path = Parents;
 			sourceTree = "<group>";
@@ -568,10 +583,15 @@
 				4F571ABC22FC119A00DB64DD /* DetailVC.swift in Sources */,
 				4F94AA4F22F2C9E00063CE99 /* LoginView.swift in Sources */,
 				4F4BB01A22FD47A0007E9A3F /* Protocols.swift in Sources */,
+				4FCD26F4230177000069AA1F /* SettingsVC.swift in Sources */,
 				4F4BB01C22FD518F007E9A3F /* MenuView.swift in Sources */,
+				4FCD26EC230170C50069AA1F /* ProfileVC.swift in Sources */,
+				4FCD26F22301768A0069AA1F /* NotificationVC.swift in Sources */,
 				4F7FA1B522F4146F0033B993 /* ParentsHomeVC.swift in Sources */,
 				4F94AA2122F2BAF50063CE99 /* LoginVC.swift in Sources */,
 				4F4BB01822FD456B007E9A3F /* MainController.swift in Sources */,
+				4FCD26F0230174090069AA1F /* MessageVC.swift in Sources */,
+				4FCD26EE230170D60069AA1F /* ProfileView.swift in Sources */,
 				4F4BB02022FD554F007E9A3F /* MenuCell.swift in Sources */,
 				4F94AA1F22F2BAF50063CE99 /* AppDelegate.swift in Sources */,
 			);

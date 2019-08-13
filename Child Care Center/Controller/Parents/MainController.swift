@@ -62,10 +62,11 @@ class MainController: UIViewController {
         }
     }
     
-    func showMenu() {
+    func openMenu() {
         setUpMenuVC()
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
             self.nav.view.frame.origin.x = self.view.frame.width * 0.65
+            print("Open menu")
 //            self.setNeedsStatusBarAppearanceUpdate()
         })
     }
@@ -73,6 +74,7 @@ class MainController: UIViewController {
     func closeMenu() {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
             self.nav.view.frame.origin.x = 0
+            print("Close menu")
 //            self.setNeedsStatusBarAppearanceUpdate()
         })
     }
@@ -81,16 +83,19 @@ class MainController: UIViewController {
         switch menuOptionSelected {
         case .Profile:
             print("Prifile Click!")
-            parentsHomeVC.navigationController?.pushViewController(DetailVC(), animated: true)
+            parentsHomeVC.navigationController?.pushViewController(ProfileVC(), animated: true)
             break
         case .Messages:
             print("Message Click!")
+            parentsHomeVC.navigationController?.pushViewController(MessageVC(), animated: true)
             break
         case .Notifications:
             print("Notification Click!")
+            parentsHomeVC.navigationController?.pushViewController(NotificationVC(), animated: true)
             break
         case .Settings:
             print("Settings Click!")
+            parentsHomeVC.navigationController?.pushViewController(SettingsVC(), animated: true)
             break
         }
     }
@@ -101,7 +106,7 @@ extension MainController: ParentsHomeVCDelegate {
     func menuToggle() {
         isExpand = !isExpand
         if isExpand {
-            showMenu()
+            openMenu()
         } else {
             closeMenu()
         }

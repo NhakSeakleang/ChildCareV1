@@ -61,9 +61,8 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
-        self.present(loadingAlert, animated: true, completion: nil)
-//        locationManager.startUpdatingLocation()
-//        locationManager.startMonitoringSignificantLocationChanges()
+        //uncomment to show loading alert
+//        self.present(loadingAlert, animated: true, completion: nil)
     }
     
     func setUpMarker(lat: Double, long: Double) {
@@ -109,6 +108,7 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
     
     // GoogleMap Delegate
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+        print("Show marker info")
         let width = view.frame.width * 0.7
         let preview = CustomMarkerPreview(width: width)
         return preview
@@ -118,6 +118,7 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
 //        delegate.checkMenu()
+        print("open detail")
         navigationController?.pushViewController(DetailVC(), animated: true)
     }
     
