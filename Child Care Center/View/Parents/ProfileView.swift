@@ -22,7 +22,19 @@ class ProfileView: UIView {
         return v
     }()
     
-    var viewChildren: UIView = {
+    var viewChildren1: UIView = {
+        let v = UIView()
+        v.contentMode = .center
+        return v
+    }()
+    
+    var viewChildren2: UIView = {
+        let v = UIView()
+        v.contentMode = .center
+        return v
+    }()
+    
+    var viewChildren3: UIView = {
         let v = UIView()
         v.contentMode = .center
         return v
@@ -141,6 +153,32 @@ class ProfileView: UIView {
         return lb
     }()
     
+    var lbChildrenName1: UILabel = {
+        let lb = UILabel()
+        lb.text = "Emma"
+        lb.textColor = .gray
+        lb.textAlignment = .center
+//        lb.font = UIFont.boldSystemFont(ofSize: 18)
+        return lb
+    }()
+    
+    var lbChildrenName2: UILabel = {
+        let lb = UILabel()
+        lb.text = "Jack"
+        lb.textColor = .gray
+        lb.textAlignment = .center
+//        lb.font = UIFont.boldSystemFont(ofSize: 18)
+        return lb
+    }()
+    
+    var lbChildrenName3: UILabel = {
+        let lb = UILabel()
+        lb.text = "Amelia"
+        lb.textColor = .gray
+        lb.textAlignment = .center
+//        lb.font = UIFont.boldSystemFont(ofSize: 18)
+        return lb
+    }()
     
     override func layoutSubviews() {
         setUp()
@@ -216,13 +254,6 @@ class ProfileView: UIView {
         lbChildren.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         lbChildren.topAnchor.constraint(equalTo: viewLine.bottomAnchor, constant: 25).isActive = true
         
-//        //view children
-//        addSubview(viewChildren)
-//        viewChildren.translatesAutoresizingMaskIntoConstraints = false
-//        viewChildren.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-//        viewChildren.topAnchor.constraint(equalTo: lbChildren.bottomAnchor, constant: 25).isActive = true
-//        viewChildren.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        
         //stack view children
         addSubview(stackChildren)
         stackChildren.translatesAutoresizingMaskIntoConstraints = false
@@ -230,36 +261,62 @@ class ProfileView: UIView {
         stackChildren.topAnchor.constraint(equalTo: lbChildren.bottomAnchor, constant: 25).isActive = true
         stackChildren.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         
+        //view children1
+        stackChildren.addArrangedSubview(viewChildren1)
+        viewChildren1.translatesAutoresizingMaskIntoConstraints = false
+        
+        //view children2
+        stackChildren.addArrangedSubview(viewChildren2)
+        viewChildren2.translatesAutoresizingMaskIntoConstraints = false
+
+        //view children3
+        stackChildren.addArrangedSubview(viewChildren3)
+        viewChildren3.translatesAutoresizingMaskIntoConstraints = false
+        
         //imageview child 1
-//        viewChildren.addSubview(imgChild1)
-        stackChildren.addArrangedSubview(imgChild1)
+        viewChildren1.addSubview(imgChild1)
         imgChild1.translatesAutoresizingMaskIntoConstraints = false
         imgChild1.widthAnchor.constraint(equalToConstant: 100).isActive = true
         imgChild1.heightAnchor.constraint(equalToConstant: 100).isActive = true
-//        imgChild1.leadingAnchor.constraint(equalTo: viewChildren.leadingAnchor).isActive = true
-//        imgChild1.topAnchor.constraint(equalTo: viewChildren.topAnchor).isActive = true
-//        imgChild1.bottomAnchor.constraint(equalTo: viewChildren.bottomAnchor).isActive = true
+        imgChild1.centerXAnchor.constraint(equalTo: viewChildren1.centerXAnchor).isActive = true
+        imgChild1.centerYAnchor.constraint(equalTo: viewChildren1.centerYAnchor).isActive = true
         
-        //imageview child 1
-//        viewChildren.addSubview(imgChild2)
-        stackChildren.addArrangedSubview(imgChild2)
+        //label name chil 1
+        viewChildren1.addSubview(lbChildrenName1)
+        lbChildrenName1.translatesAutoresizingMaskIntoConstraints = false
+        lbChildrenName1.centerXAnchor.constraint(equalTo: viewChildren1.centerXAnchor).isActive = true
+        lbChildrenName1.topAnchor.constraint(equalTo: imgChild1.bottomAnchor).isActive = true
+        lbChildrenName1.bottomAnchor.constraint(equalTo: viewChildren1.bottomAnchor).isActive = true
+        
+        //imageview child 2
+        viewChildren2.addSubview(imgChild2)
         imgChild2.translatesAutoresizingMaskIntoConstraints = false
         imgChild2.widthAnchor.constraint(equalToConstant: 100).isActive = true
         imgChild2.heightAnchor.constraint(equalToConstant: 100).isActive = true
-//        imgChild2.leadingAnchor.constraint(equalTo: imgChild1.trailingAnchor).isActive = true
-//        imgChild2.topAnchor.constraint(equalTo: viewChildren.topAnchor).isActive = true
-//        imgChild2.bottomAnchor.constraint(equalTo: viewChildren.bottomAnchor).isActive = true
+        imgChild2.centerXAnchor.constraint(equalTo: viewChildren2.centerXAnchor).isActive = true
+        imgChild2.centerYAnchor.constraint(equalTo: viewChildren2.centerYAnchor).isActive = true
         
-        //imageview child 1
-//        viewChildren.addSubview(imgChild3)
-        stackChildren.addArrangedSubview(imgChild3)
+        //label name chil 2
+        viewChildren2.addSubview(lbChildrenName2)
+        lbChildrenName2.translatesAutoresizingMaskIntoConstraints = false
+        lbChildrenName2.centerXAnchor.constraint(equalTo: viewChildren2.centerXAnchor).isActive = true
+        lbChildrenName2.topAnchor.constraint(equalTo: imgChild2.bottomAnchor).isActive = true
+        lbChildrenName2.bottomAnchor.constraint(equalTo: viewChildren2.bottomAnchor).isActive = true
+        
+        //imageview child 3
+        viewChildren3.addSubview(imgChild3)
         imgChild3.translatesAutoresizingMaskIntoConstraints = false
         imgChild3.widthAnchor.constraint(equalToConstant: 100).isActive = true
         imgChild3.heightAnchor.constraint(equalToConstant: 100).isActive = true
-//        imgChild3.leadingAnchor.constraint(equalTo: imgChild2.trailingAnchor).isActive = true
-//        imgChild3.topAnchor.constraint(equalTo: viewChildren.topAnchor).isActive = true
-//        imgChild3.bottomAnchor.constraint(equalTo: viewChildren.bottomAnchor).isActive = true
-//        imgChild3.trailingAnchor.constraint(equalTo: viewChildren.trailingAnchor).isActive = true
+        imgChild3.centerXAnchor.constraint(equalTo: viewChildren3.centerXAnchor).isActive = true
+        imgChild3.centerYAnchor.constraint(equalTo: viewChildren3.centerYAnchor).isActive = true
+        
+        //label name chil 3
+        viewChildren3.addSubview(lbChildrenName3)
+        lbChildrenName3.translatesAutoresizingMaskIntoConstraints = false
+        lbChildrenName3.centerXAnchor.constraint(equalTo: viewChildren3.centerXAnchor).isActive = true
+        lbChildrenName3.topAnchor.constraint(equalTo: imgChild2.bottomAnchor).isActive = true
+        lbChildrenName3.bottomAnchor.constraint(equalTo: viewChildren3.bottomAnchor).isActive = true
         
     }
 }

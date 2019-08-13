@@ -15,6 +15,9 @@ class MainController: UIViewController {
     var menuVC: MenuVC!
     
     var isExpand = false
+    
+    var swipeLeft: UISwipeGestureRecognizer!
+    var tap: UITapGestureRecognizer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,11 +49,11 @@ class MainController: UIViewController {
         view.addSubview(nav.view)
     }
     
-    @objc func checkMenu() {
-        if isExpand {
-            menuToggle()
-        }
-    }
+//    @objc func checkMenu() {
+//        if isExpand {
+//            menuToggle()
+//        }
+//    }
     
     func setUpMenuVC() {
         if menuVC == nil {
@@ -62,10 +65,28 @@ class MainController: UIViewController {
         }
     }
     
+    func setUpGesture() {
+        if swipeLeft == nil {
+            swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(gestureHandle))
+            swipeLeft.direction = .left
+        }
+        if tap == nil {
+            tap = UITapGestureRecognizer(target: self, action: #selector(gestureHandle))
+        }
+    }
+    
+    @objc func gestureHandle() {
+        menuToggle()
+    }
+    
     func openMenu() {
         setUpMenuVC()
+        setUpGesture()
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
             self.nav.view.frame.origin.x = self.view.frame.width * 0.65
+            self.parentsHomeVC.parentsHomeView.googleMap.isUserInteractionEnabled = false
+            self.parentsHomeVC.view.addGestureRecognizer(self.swipeLeft)
+            self.parentsHomeVC.view.addGestureRecognizer(self.tap)
             print("Open menu")
 //            self.setNeedsStatusBarAppearanceUpdate()
         })
@@ -74,6 +95,9 @@ class MainController: UIViewController {
     func closeMenu() {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
             self.nav.view.frame.origin.x = 0
+            self.parentsHomeVC.parentsHomeView.googleMap.isUserInteractionEnabled = true
+            self.parentsHomeVC.view.removeGestureRecognizer(self.swipeLeft)
+            self.parentsHomeVC.view.removeGestureRecognizer(self.tap)
             print("Close menu")
 //            self.setNeedsStatusBarAppearanceUpdate()
         })
