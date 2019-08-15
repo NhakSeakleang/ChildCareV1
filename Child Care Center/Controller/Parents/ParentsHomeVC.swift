@@ -62,7 +62,7 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
         //uncomment to show loading alert
-//        self.present(loadingAlert, animated: true, completion: nil)
+        self.present(loadingAlert, animated: true, completion: nil)
     }
     
     func setUpMarker(lat: Double, long: Double) {
@@ -91,7 +91,6 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print("Location Update!")
         loadingAlert.dismiss(animated: true, completion: nil)
-//        locationManager.stopUpdatingLocation()
         let target = (locations.last?.coordinate)!
         let camera  = GMSCameraPosition.camera(withTarget: target, zoom: 15.0)
         parentsHomeView.googleMap.camera = camera
@@ -117,17 +116,8 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
     
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-//        delegate.checkMenu()
         print("open detail")
         navigationController?.pushViewController(DetailVC(), animated: true)
     }
-    
-//    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-//        delegate.checkMenu()
-//    }
-//
-//    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
-//        delegate.checkMenu()
-//    }
 
 }

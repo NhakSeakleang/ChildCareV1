@@ -9,6 +9,19 @@
 import UIKit
 
 class SettingsVC: UIViewController {
+    
+    var settingsView: SettingsView!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +30,9 @@ class SettingsVC: UIViewController {
     }
     
     func setUp() {
-        view.backgroundColor = .white
         title = "Settings"
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Search").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(searchClick))
+        settingsView = SettingsView()
+        view = settingsView
     }
 
 }

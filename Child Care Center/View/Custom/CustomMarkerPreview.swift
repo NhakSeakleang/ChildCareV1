@@ -33,7 +33,7 @@ class CustomMarkerPreview: UIView {
         img.layer.cornerRadius = 10
         img.clipsToBounds = true
         img.image = #imageLiteral(resourceName: "MarkerPreview")
-        img.contentMode = ContentMode.scaleAspectFit
+        img.contentMode = ContentMode.scaleAspectFill
         img.translatesAutoresizingMaskIntoConstraints = false
         return img
     }()

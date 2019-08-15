@@ -21,14 +21,14 @@ class DetailVC: UIViewController {
     
     func setUp() {
         title = "Detail"
-//        detailView = DetailView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
         detailView = DetailView()
         detailView.setData(image: #imageLiteral(resourceName: "MarkerPreview"), title: "Title", time: "7:00 AM - 5:00 PM", description: descriptions)
+        detailView.btnBook.addTarget(self, action: #selector(bookClick), for: .touchUpInside)
         view = detailView
     }
     
-//    override func viewDidLayoutSubviews() {
-//        detailView.setData(image: #imageLiteral(resourceName: "MarkerPreview"), title: "Title", time: "7:00 AM - 5:00 PM", description: "Descriptions")
-//    }
+    @objc func bookClick() {
+        navigationController?.pushViewController(SelectDateTimeVC(), animated: true)
+    }
 
 }

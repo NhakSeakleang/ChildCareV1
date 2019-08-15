@@ -158,7 +158,6 @@ class ProfileView: UIView {
         lb.text = "Emma"
         lb.textColor = .gray
         lb.textAlignment = .center
-//        lb.font = UIFont.boldSystemFont(ofSize: 18)
         return lb
     }()
     
@@ -167,7 +166,6 @@ class ProfileView: UIView {
         lb.text = "Jack"
         lb.textColor = .gray
         lb.textAlignment = .center
-//        lb.font = UIFont.boldSystemFont(ofSize: 18)
         return lb
     }()
     
@@ -176,7 +174,6 @@ class ProfileView: UIView {
         lb.text = "Amelia"
         lb.textColor = .gray
         lb.textAlignment = .center
-//        lb.font = UIFont.boldSystemFont(ofSize: 18)
         return lb
     }()
     

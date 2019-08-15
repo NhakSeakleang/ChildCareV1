@@ -19,13 +19,13 @@ class ProfileVC: UIViewController {
     }
 
     func setUp() {
-        title = "Profile"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveClick))
+        title = "My account"
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveClick))
         profileView = ProfileView()
         view = profileView
     }
     
-    @objc func saveClick() {
-        print("Save")
-    }
+//    @objc func saveClick() {
+//        print("Save")
+//    }
 }

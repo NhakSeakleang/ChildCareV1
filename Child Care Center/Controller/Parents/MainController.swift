@@ -43,17 +43,8 @@ class MainController: UIViewController {
         nav.view.layer.shadowRadius = 5
         nav.view.layer.shadowOffset = CGSize(width: -1, height: 0)
         
-//        let gesture = UITapGestureRecognizer(target: self, action: #selector(checkMenu))
-//        nav.navigationController?.viewControllers.first?.view.addGestureRecognizer(gesture)
-        
         view.addSubview(nav.view)
     }
-    
-//    @objc func checkMenu() {
-//        if isExpand {
-//            menuToggle()
-//        }
-//    }
     
     func setUpMenuVC() {
         if menuVC == nil {
@@ -88,7 +79,6 @@ class MainController: UIViewController {
             self.parentsHomeVC.view.addGestureRecognizer(self.swipeLeft)
             self.parentsHomeVC.view.addGestureRecognizer(self.tap)
             print("Open menu")
-//            self.setNeedsStatusBarAppearanceUpdate()
         })
     }
     
@@ -99,7 +89,6 @@ class MainController: UIViewController {
             self.parentsHomeVC.view.removeGestureRecognizer(self.swipeLeft)
             self.parentsHomeVC.view.removeGestureRecognizer(self.tap)
             print("Close menu")
-//            self.setNeedsStatusBarAppearanceUpdate()
         })
     }
     
@@ -113,6 +102,8 @@ class MainController: UIViewController {
             print("Message Click!")
             parentsHomeVC.navigationController?.pushViewController(MessageVC(), animated: true)
             break
+        case .Cameras:
+            print("Cameras Click!")
         case .Notifications:
             print("Notification Click!")
             parentsHomeVC.navigationController?.pushViewController(NotificationVC(), animated: true)
@@ -134,5 +125,7 @@ extension MainController: ParentsHomeVCDelegate {
         } else {
             closeMenu()
         }
+//        uncomment to toggle status bar
+//        self.setNeedsStatusBarAppearanceUpdate()
     }
 }
