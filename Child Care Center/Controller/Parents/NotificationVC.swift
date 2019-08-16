@@ -9,20 +9,29 @@
 import UIKit
 
 class NotificationVC: UIViewController {
+    
+    var notificationView: NotificationView = {
+        return NotificationView()
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setUp()
+        setData()
     }
     
     func setUp() {
-        view.backgroundColor = .white
         title = "Notifications"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Search").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(searchClick))
+        view = notificationView
     }
     
-    @objc func searchClick() {
+    func setData() {
+        
+        let formatrer = DateFormatter()
+        formatrer.dateFormat = "dd MMMM yyyy hh:mm a"
+        notificationView.setData(dateTime: formatrer.string(from: Date()), discription: "Thank you. Your booking has been completed.")
         
     }
 

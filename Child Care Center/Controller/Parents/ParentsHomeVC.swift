@@ -62,7 +62,7 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
         //uncomment to show loading alert
-        self.present(loadingAlert, animated: true, completion: nil)
+//        self.present(loadingAlert, animated: true, completion: nil)
     }
     
     func setUpMarker(lat: Double, long: Double) {

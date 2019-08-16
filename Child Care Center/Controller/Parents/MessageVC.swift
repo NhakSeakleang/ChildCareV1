@@ -9,21 +9,36 @@
 import UIKit
 
 class MessageVC: UIViewController {
+    
+    var messagesView: MessagesView = {
+        return MessagesView()
+    }()
+    
+    var tap: UITapGestureRecognizer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setUp()
+        setUpEvent()
     }
     
     func setUp() {
-        view.backgroundColor = .white
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         title = "Messages"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Search").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(searchClick))
+        view = messagesView
+        
     }
     
-    @objc func searchClick() {
+    func setUpEvent() {
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(messageClick))
+        messagesView.viewCell.addGestureRecognizer(tap)
         
     }
 
+    @objc func messageClick() {
+        navigationController?.pushViewController(MessageDetailVC(), animated: true)
+    }
+    
 }

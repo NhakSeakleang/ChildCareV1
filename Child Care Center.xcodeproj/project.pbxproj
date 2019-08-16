@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		013AD755A2D897D501983A97 /* Pods_Child_Care_CenterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D3A7A126868612B743BA82 /* Pods_Child_Care_CenterUITests.framework */; };
+		4F2A5646230511C900C6BA40 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A5645230511C900C6BA40 /* NotificationView.swift */; };
+		4F2A5648230531F900C6BA40 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A5647230531F900C6BA40 /* MessagesView.swift */; };
+		4F2A564A2305525900C6BA40 /* MessageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A56492305525900C6BA40 /* MessageDetailVC.swift */; };
+		4F2A564C2305544300C6BA40 /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A564B2305544300C6BA40 /* MessageDetailView.swift */; };
 		4F431FE82303CA1D003E47E0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F431FE72303CA1D003E47E0 /* SettingsView.swift */; };
 		4F431FEA23040081003E47E0 /* SelectDateTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F431FE923040081003E47E0 /* SelectDateTimeVC.swift */; };
 		4F431FEC23040119003E47E0 /* SelectDateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F431FEB23040119003E47E0 /* SelectDateTimeView.swift */; };
@@ -65,6 +69,10 @@
 		3361B243D522A0405AD1A8A1 /* Pods-Child Care CenterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care CenterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care CenterTests/Pods-Child Care CenterTests.release.xcconfig"; sourceTree = "<group>"; };
 		34FBE2F32AB7032375A3CE59 /* Pods-Child Care CenterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care CenterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care CenterUITests/Pods-Child Care CenterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		41D3A7A126868612B743BA82 /* Pods_Child_Care_CenterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Child_Care_CenterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2A5645230511C900C6BA40 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		4F2A5647230531F900C6BA40 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		4F2A56492305525900C6BA40 /* MessageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailVC.swift; sourceTree = "<group>"; };
+		4F2A564B2305544300C6BA40 /* MessageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailView.swift; sourceTree = "<group>"; };
 		4F431FE72303CA1D003E47E0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4F431FE923040081003E47E0 /* SelectDateTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateTimeVC.swift; sourceTree = "<group>"; };
 		4F431FEB23040119003E47E0 /* SelectDateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateTimeView.swift; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 				4FCD26F3230177000069AA1F /* SettingsVC.swift */,
 				4F431FE923040081003E47E0 /* SelectDateTimeVC.swift */,
 				4F431FED23041653003E47E0 /* SelectChildredVC.swift */,
+				4F2A56492305525900C6BA40 /* MessageDetailVC.swift */,
 			);
 			path = Parents;
 			sourceTree = "<group>";
@@ -185,6 +194,9 @@
 				4F431FE72303CA1D003E47E0 /* SettingsView.swift */,
 				4F431FEB23040119003E47E0 /* SelectDateTimeView.swift */,
 				4F431FEF2304167C003E47E0 /* SelectChildrenView.swift */,
+				4F2A5645230511C900C6BA40 /* NotificationView.swift */,
+				4F2A5647230531F900C6BA40 /* MessagesView.swift */,
+				4F2A564B2305544300C6BA40 /* MessageDetailView.swift */,
 			);
 			path = Parents;
 			sourceTree = "<group>";
@@ -596,10 +608,12 @@
 				4F571AB922FBD78A00DB64DD /* CustomMarkerPreview.swift in Sources */,
 				4F7FA1AF22F3F81B0033B993 /* SignUpVC.swift in Sources */,
 				4F431FF02304167C003E47E0 /* SelectChildrenView.swift in Sources */,
+				4F2A5648230531F900C6BA40 /* MessagesView.swift in Sources */,
 				4F4BB01E22FD53BF007E9A3F /* MenuVC.swift in Sources */,
 				4F7FA1B122F3F8640033B993 /* SignUpView.swift in Sources */,
 				4F571ABE22FC11D800DB64DD /* DetailView.swift in Sources */,
 				4F571ABC22FC119A00DB64DD /* DetailVC.swift in Sources */,
+				4F2A564C2305544300C6BA40 /* MessageDetailView.swift in Sources */,
 				4F94AA4F22F2C9E00063CE99 /* LoginView.swift in Sources */,
 				4F431FEE23041653003E47E0 /* SelectChildredVC.swift in Sources */,
 				4F4BB01A22FD47A0007E9A3F /* Protocols.swift in Sources */,
@@ -607,9 +621,11 @@
 				4F4BB01C22FD518F007E9A3F /* MenuView.swift in Sources */,
 				4FCD26EC230170C50069AA1F /* ProfileVC.swift in Sources */,
 				4FCD26F22301768A0069AA1F /* NotificationVC.swift in Sources */,
+				4F2A564A2305525900C6BA40 /* MessageDetailVC.swift in Sources */,
 				4F7FA1B522F4146F0033B993 /* ParentsHomeVC.swift in Sources */,
 				4F94AA2122F2BAF50063CE99 /* LoginVC.swift in Sources */,
 				4F4BB01822FD456B007E9A3F /* MainController.swift in Sources */,
+				4F2A5646230511C900C6BA40 /* NotificationView.swift in Sources */,
 				4FCD26F0230174090069AA1F /* MessageVC.swift in Sources */,
 				4FCD26EE230170D60069AA1F /* ProfileView.swift in Sources */,
 				4F4BB02022FD554F007E9A3F /* MenuCell.swift in Sources */,
