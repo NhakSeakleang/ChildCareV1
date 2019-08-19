@@ -21,9 +21,11 @@ class DetailVC: UIViewController {
     
     func setUp() {
         title = "Detail"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Book", style: .plain, target: self, action: #selector(bookClick))
         detailView = DetailView()
         detailView.setData(image: #imageLiteral(resourceName: "MarkerPreview"), title: "Title", time: "7:00 AM - 5:00 PM", description: descriptions)
-        detailView.btnBook.addTarget(self, action: #selector(bookClick), for: .touchUpInside)
+        detailView.imgScrollView.delegate = self
+        detailView.pageControl.addTarget(self, action: #selector(pageControlClick(_:)), for: .touchUpInside)
         view = detailView
     }
     
@@ -31,4 +33,19 @@ class DetailVC: UIViewController {
         navigationController?.pushViewController(SelectDateTimeVC(), animated: true)
     }
 
+    @objc func pageControlClick(_ sender: UIPageControl) {
+        var frame = detailView.imgScrollView.frame
+        frame.origin.x = frame.size.width * CGFloat(sender.currentPage)
+        detailView.imgScrollView.scrollRectToVisible(frame, animated: true)
+    }
 }
+
+extension DetailVC: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let i = scrollView.contentOffset.x / view.frame.width
+        print("\(i)")
+        detailView.pageControl.currentPage = Int(round(i))
+    }
+}
+
+

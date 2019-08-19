@@ -28,6 +28,12 @@ class SettingsView: UIView {
         return v
     }()
     
+    var viewNotification: UIView = {
+        let v = UIView()
+        v.contentMode = .center
+        return v
+    }()
+    
     var viewReceiveNotification: UIView = {
         let v = UIView()
         v.contentMode = .center
@@ -58,6 +64,13 @@ class SettingsView: UIView {
         return lb
     }()
     
+    var lbNotification: UILabel = {
+        let lb = UILabel()
+        lb.text = "Notification"
+        lb.textAlignment = .center
+        return lb
+    }()
+    
     var lbReceiveNotification: UILabel = {
         let lb = UILabel()
         lb.text = "Receive notification"
@@ -83,6 +96,14 @@ class SettingsView: UIView {
     }()
     
     var lbChangeLangEnd: UILabel = {
+        let lb = UILabel()
+        lb.text = ">"
+        lb.font = UIFont.boldSystemFont(ofSize: 18)
+        lb.textAlignment = .center
+        return lb
+    }()
+    
+    var lbNotificationEnd: UILabel = {
         let lb = UILabel()
         lb.text = ">"
         lb.font = UIFont.boldSystemFont(ofSize: 18)
@@ -128,13 +149,21 @@ class SettingsView: UIView {
         viewChangeLang.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         viewChangeLang.topAnchor.constraint(equalTo: viewChangePWD.bottomAnchor).isActive = true
         
+        //view notification
+        addSubview(viewNotification)
+        viewNotification.translatesAutoresizingMaskIntoConstraints = false
+        viewNotification.heightAnchor.constraint(equalToConstant: 65).isActive = true
+        viewNotification.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        viewNotification.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        viewNotification.topAnchor.constraint(equalTo: viewChangeLang.bottomAnchor).isActive = true
+        
         //view receceive notification
         addSubview(viewReceiveNotification)
         viewReceiveNotification.translatesAutoresizingMaskIntoConstraints = false
         viewReceiveNotification.heightAnchor.constraint(equalToConstant: 65).isActive = true
         viewReceiveNotification.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         viewReceiveNotification.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        viewReceiveNotification.topAnchor.constraint(equalTo: viewChangeLang.bottomAnchor).isActive = true
+        viewReceiveNotification.topAnchor.constraint(equalTo: viewNotification.bottomAnchor).isActive = true
         
         //label edit profile
         viewEditProfile.addSubview(lbEditProfile)
@@ -153,6 +182,12 @@ class SettingsView: UIView {
         lbChngeLang.translatesAutoresizingMaskIntoConstraints = false
         lbChngeLang.centerYAnchor.constraint(equalTo: viewChangeLang.centerYAnchor).isActive = true
         lbChngeLang.leadingAnchor.constraint(equalTo: viewChangeLang.leadingAnchor, constant: 16).isActive = true
+        
+        //label notification
+        viewNotification.addSubview(lbNotification)
+        lbNotification.translatesAutoresizingMaskIntoConstraints = false
+        lbNotification.centerYAnchor.constraint(equalTo: viewNotification.centerYAnchor).isActive = true
+        lbNotification.leadingAnchor.constraint(equalTo: viewNotification.leadingAnchor, constant: 16).isActive = true
         
         //label receceive notification
         viewReceiveNotification.addSubview(lbReceiveNotification)
@@ -177,6 +212,12 @@ class SettingsView: UIView {
         lbChangeLangEnd.translatesAutoresizingMaskIntoConstraints = false
         lbChangeLangEnd.centerYAnchor.constraint(equalTo: viewChangeLang.centerYAnchor).isActive = true
         lbChangeLangEnd.trailingAnchor.constraint(equalTo: viewChangeLang.trailingAnchor, constant: -32).isActive = true
+        
+        //label notification end
+        viewNotification.addSubview(lbNotificationEnd)
+        lbNotificationEnd.translatesAutoresizingMaskIntoConstraints = false
+        lbNotificationEnd.centerYAnchor.constraint(equalTo: viewNotification.centerYAnchor).isActive = true
+        lbNotificationEnd.trailingAnchor.constraint(equalTo: viewNotification.trailingAnchor, constant: -32).isActive = true
         
         //switch receceive notification
         viewReceiveNotification.addSubview(swRececeiveNotification)

@@ -25,7 +25,8 @@ class LoginVC: UIViewController {
     }
     
     @objc func btnLogInClick() {
-        present(MainController(), animated: true, completion: nil)
+//        present(MainController(), animated: true, completion: nil)
+        navigationController?.viewControllers = [TabBarController()]
     }
     
     @objc func btnSignUpClick() {

@@ -21,13 +21,13 @@ class SelectChildredVC: UIViewController {
     
     func setUp() {
         title = "Select Children"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(done))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextClick))
         selectChildrenView = SelectChildrenView()
         view = selectChildrenView
     }
     
-    @objc func done() {
-        navigationController?.popToRootViewController(animated: true)
+    @objc func nextClick() {
+        navigationController?.pushViewController(SelectBabysitterVC(), animated: true)
     }
 
 }

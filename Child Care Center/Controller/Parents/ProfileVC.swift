@@ -16,16 +16,21 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
 
         setUp()
+        setUpEvent()
     }
 
     func setUp() {
         title = "My account"
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveClick))
         profileView = ProfileView()
         view = profileView
     }
     
-//    @objc func saveClick() {
-//        print("Save")
-//    }
+    func setUpEvent() {
+        profileView.btnLogout.addTarget(self, action: #selector(logout), for: .touchUpInside)
+    }
+    
+    @objc func logout() {
+        print("Logout")
+        navigationController?.viewControllers = [LoginVC()]
+    }
 }

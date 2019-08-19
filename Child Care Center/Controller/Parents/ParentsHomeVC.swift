@@ -19,6 +19,7 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+        requestLocation()
     }
     
     func setUp() {
@@ -29,7 +30,7 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
     }
     
     override func viewDidLayoutSubviews() {
-        requestLocation()
+//        requestLocation()
     }
     
     func setUpNavigation() {
@@ -57,6 +58,7 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
     }
     
     func requestLocation() {
+        parentsHomeView.showAler(isShow: true)
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -90,7 +92,8 @@ class ParentsHomeVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
     // CLLocationManager Delegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print("Location Update!")
-        loadingAlert.dismiss(animated: true, completion: nil)
+//        loadingAlert.dismiss(animated: true, completion: nil)
+        parentsHomeView.showAler(isShow: false)
         let target = (locations.last?.coordinate)!
         let camera  = GMSCameraPosition.camera(withTarget: target, zoom: 15.0)
         parentsHomeView.googleMap.camera = camera

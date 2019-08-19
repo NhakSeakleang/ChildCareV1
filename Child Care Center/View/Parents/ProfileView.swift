@@ -54,7 +54,7 @@ class ProfileView: UIView {
         imgView.contentMode = ContentMode.scaleAspectFill
         imgView.backgroundColor = .lightGray
         imgView.layer.cornerRadius = 75
-        imgView.layer.borderColor = UIColor.gray.cgColor
+        imgView.layer.borderColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).cgColor
         imgView.layer.borderWidth = 2
         imgView.clipsToBounds = true
         return imgView
@@ -66,7 +66,7 @@ class ProfileView: UIView {
         imgView.contentMode = ContentMode.scaleToFill
         imgView.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         imgView.layer.cornerRadius = 25
-        imgView.layer.borderColor = UIColor.gray.cgColor
+        imgView.layer.borderColor = UIColor.white.cgColor
         imgView.layer.borderWidth = 2
         imgView.clipsToBounds = true
         return imgView
@@ -78,7 +78,7 @@ class ProfileView: UIView {
         imgView.contentMode = ContentMode.scaleAspectFill
         imgView.backgroundColor = .lightGray
         imgView.layer.cornerRadius = 50
-        imgView.layer.borderColor = UIColor.gray.cgColor
+        imgView.layer.borderColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).cgColor
         imgView.layer.borderWidth = 2
         imgView.clipsToBounds = true
         return imgView
@@ -90,7 +90,7 @@ class ProfileView: UIView {
         imgView.contentMode = ContentMode.scaleAspectFill
         imgView.backgroundColor = .lightGray
         imgView.layer.cornerRadius = 50
-        imgView.layer.borderColor = UIColor.gray.cgColor
+        imgView.layer.borderColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).cgColor
         imgView.layer.borderWidth = 2
         imgView.clipsToBounds = true
         return imgView
@@ -102,7 +102,7 @@ class ProfileView: UIView {
         imgView.contentMode = ContentMode.scaleAspectFill
         imgView.backgroundColor = .lightGray
         imgView.layer.cornerRadius = 50
-        imgView.layer.borderColor = UIColor.gray.cgColor
+        imgView.layer.borderColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).cgColor
         imgView.layer.borderWidth = 2
         imgView.clipsToBounds = true
         return imgView
@@ -177,6 +177,16 @@ class ProfileView: UIView {
         return lb
     }()
     
+    var btnLogout: UIButton = {
+        let btn = UIButton(type: .roundedRect)
+        btn.setTitle("Logout", for: .normal)
+        btn.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+        btn.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        btn.clipsToBounds = true
+        btn.layer.cornerRadius = 10
+        return btn
+    }()
+    
     override func layoutSubviews() {
         setUp()
     }
@@ -237,13 +247,20 @@ class ProfileView: UIView {
         lbStatusText.topAnchor.constraint(equalTo: viewStatus.topAnchor).isActive = true
         lbStatusText.bottomAnchor.constraint(equalTo: viewStatus.bottomAnchor).isActive = true
         
+        //button logout
+        addSubview(btnLogout)
+        btnLogout.translatesAutoresizingMaskIntoConstraints = false
+        btnLogout.widthAnchor.constraint(equalTo: imgProfile.widthAnchor).isActive = true
+        btnLogout.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        btnLogout.topAnchor.constraint(equalTo: viewStatus.bottomAnchor, constant: 16).isActive = true
+        
         //view line
         addSubview(viewLine)
         viewLine.translatesAutoresizingMaskIntoConstraints = false
         viewLine.heightAnchor.constraint(equalToConstant: 1).isActive = true
         viewLine.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         viewLine.widthAnchor.constraint(equalToConstant: frame.width - 50).isActive = true
-        viewLine.topAnchor.constraint(equalTo: viewStatus.bottomAnchor, constant: 25).isActive = true
+        viewLine.topAnchor.constraint(equalTo: btnLogout.bottomAnchor, constant: 16).isActive = true
         
         //label children
         addSubview(lbChildren)

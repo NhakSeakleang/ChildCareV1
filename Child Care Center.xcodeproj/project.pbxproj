@@ -12,6 +12,9 @@
 		4F2A5648230531F900C6BA40 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A5647230531F900C6BA40 /* MessagesView.swift */; };
 		4F2A564A2305525900C6BA40 /* MessageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A56492305525900C6BA40 /* MessageDetailVC.swift */; };
 		4F2A564C2305544300C6BA40 /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A564B2305544300C6BA40 /* MessageDetailView.swift */; };
+		4F2DE723230A607E0095A657 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DE722230A607E0095A657 /* CameraVC.swift */; };
+		4F2DE725230AB38A0095A657 /* SelectBabysitterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DE724230AB38A0095A657 /* SelectBabysitterVC.swift */; };
+		4F2DE727230AB4D60095A657 /* SelectBabysitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DE726230AB4D60095A657 /* SelectBabysitterView.swift */; };
 		4F431FE82303CA1D003E47E0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F431FE72303CA1D003E47E0 /* SettingsView.swift */; };
 		4F431FEA23040081003E47E0 /* SelectDateTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F431FE923040081003E47E0 /* SelectDateTimeVC.swift */; };
 		4F431FEC23040119003E47E0 /* SelectDateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F431FEB23040119003E47E0 /* SelectDateTimeView.swift */; };
@@ -23,6 +26,7 @@
 		4F4BB01C22FD518F007E9A3F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BB01B22FD518F007E9A3F /* MenuView.swift */; };
 		4F4BB01E22FD53BF007E9A3F /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BB01D22FD53BF007E9A3F /* MenuVC.swift */; };
 		4F4BB02022FD554F007E9A3F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4BB01F22FD554F007E9A3F /* MenuCell.swift */; };
+		4F4CC5FF23069DD7005A36A7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4CC5FE23069DD7005A36A7 /* TabBarController.swift */; };
 		4F571AB922FBD78A00DB64DD /* CustomMarkerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F571AB822FBD78A00DB64DD /* CustomMarkerPreview.swift */; };
 		4F571ABC22FC119A00DB64DD /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F571ABB22FC119A00DB64DD /* DetailVC.swift */; };
 		4F571ABE22FC11D800DB64DD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F571ABD22FC11D800DB64DD /* DetailView.swift */; };
@@ -73,6 +77,9 @@
 		4F2A5647230531F900C6BA40 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		4F2A56492305525900C6BA40 /* MessageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailVC.swift; sourceTree = "<group>"; };
 		4F2A564B2305544300C6BA40 /* MessageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailView.swift; sourceTree = "<group>"; };
+		4F2DE722230A607E0095A657 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		4F2DE724230AB38A0095A657 /* SelectBabysitterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBabysitterVC.swift; sourceTree = "<group>"; };
+		4F2DE726230AB4D60095A657 /* SelectBabysitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBabysitterView.swift; sourceTree = "<group>"; };
 		4F431FE72303CA1D003E47E0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4F431FE923040081003E47E0 /* SelectDateTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateTimeVC.swift; sourceTree = "<group>"; };
 		4F431FEB23040119003E47E0 /* SelectDateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateTimeView.swift; sourceTree = "<group>"; };
@@ -84,6 +91,7 @@
 		4F4BB01B22FD518F007E9A3F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		4F4BB01D22FD53BF007E9A3F /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		4F4BB01F22FD554F007E9A3F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		4F4CC5FE23069DD7005A36A7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4F571AB822FBD78A00DB64DD /* CustomMarkerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerPreview.swift; sourceTree = "<group>"; };
 		4F571ABB22FC119A00DB64DD /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailVC.swift; path = ../../View/Parents/DetailVC.swift; sourceTree = "<group>"; };
 		4F571ABD22FC11D800DB64DD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -180,6 +188,9 @@
 				4F431FE923040081003E47E0 /* SelectDateTimeVC.swift */,
 				4F431FED23041653003E47E0 /* SelectChildredVC.swift */,
 				4F2A56492305525900C6BA40 /* MessageDetailVC.swift */,
+				4F4CC5FE23069DD7005A36A7 /* TabBarController.swift */,
+				4F2DE722230A607E0095A657 /* CameraVC.swift */,
+				4F2DE724230AB38A0095A657 /* SelectBabysitterVC.swift */,
 			);
 			path = Parents;
 			sourceTree = "<group>";
@@ -197,6 +208,7 @@
 				4F2A5645230511C900C6BA40 /* NotificationView.swift */,
 				4F2A5647230531F900C6BA40 /* MessagesView.swift */,
 				4F2A564B2305544300C6BA40 /* MessageDetailView.swift */,
+				4F2DE726230AB4D60095A657 /* SelectBabysitterView.swift */,
 			);
 			path = Parents;
 			sourceTree = "<group>";
@@ -600,11 +612,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F7FA1B922F414C10033B993 /* ParentsHomeView.swift in Sources */,
+				4F4CC5FF23069DD7005A36A7 /* TabBarController.swift in Sources */,
 				4F431FE82303CA1D003E47E0 /* SettingsView.swift in Sources */,
 				4F431FEC23040119003E47E0 /* SelectDateTimeView.swift in Sources */,
 				4F4BB01622FD30FC007E9A3F /* MenuOption.swift in Sources */,
+				4F2DE727230AB4D60095A657 /* SelectBabysitterView.swift in Sources */,
 				4FB93A3922FAE03700C958F6 /* CustomMarkerView.swift in Sources */,
 				4F431FEA23040081003E47E0 /* SelectDateTimeVC.swift in Sources */,
+				4F2DE723230A607E0095A657 /* CameraVC.swift in Sources */,
 				4F571AB922FBD78A00DB64DD /* CustomMarkerPreview.swift in Sources */,
 				4F7FA1AF22F3F81B0033B993 /* SignUpVC.swift in Sources */,
 				4F431FF02304167C003E47E0 /* SelectChildrenView.swift in Sources */,
@@ -630,6 +645,7 @@
 				4FCD26EE230170D60069AA1F /* ProfileView.swift in Sources */,
 				4F4BB02022FD554F007E9A3F /* MenuCell.swift in Sources */,
 				4F94AA1F22F2BAF50063CE99 /* AppDelegate.swift in Sources */,
+				4F2DE725230AB38A0095A657 /* SelectBabysitterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
