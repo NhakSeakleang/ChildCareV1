@@ -9,6 +9,10 @@
 import UIKit
 
 class CameraVC: UIViewController {
+    
+    var cameraView: CameraView = {
+        return CameraView()
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +21,6 @@ class CameraVC: UIViewController {
     }
 
     func setUp() {
-        view.backgroundColor = UIColor(white: 1, alpha: 0.95)
+        view = cameraView
     }
 }

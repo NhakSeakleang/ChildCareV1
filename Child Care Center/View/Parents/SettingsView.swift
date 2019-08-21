@@ -81,32 +81,32 @@ class SettingsView: UIView {
     
     var lbEditProfileEnd: UILabel = {
         let lb = UILabel()
-        lb.text = ">"
-        lb.font = UIFont.boldSystemFont(ofSize: 20)
+        lb.text = "❭"
+        lb.font = UIFont.boldSystemFont(ofSize: 25)
         lb.textAlignment = .center
         return lb
     }()
     
     var lbChangePWDEnd: UILabel = {
         let lb = UILabel()
-        lb.text = ">"
-        lb.font = UIFont.boldSystemFont(ofSize: 18)
+        lb.text = "❭"
+        lb.font = UIFont.boldSystemFont(ofSize: 25)
         lb.textAlignment = .center
         return lb
     }()
     
     var lbChangeLangEnd: UILabel = {
         let lb = UILabel()
-        lb.text = ">"
-        lb.font = UIFont.boldSystemFont(ofSize: 18)
+        lb.text = "❭"
+        lb.font = UIFont.boldSystemFont(ofSize: 25)
         lb.textAlignment = .center
         return lb
     }()
     
     var lbNotificationEnd: UILabel = {
         let lb = UILabel()
-        lb.text = ">"
-        lb.font = UIFont.boldSystemFont(ofSize: 18)
+        lb.text = "❭"
+        lb.font = UIFont.boldSystemFont(ofSize: 25)
         lb.textAlignment = .center
         return lb
     }()

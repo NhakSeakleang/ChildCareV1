@@ -37,11 +37,30 @@ class SettingsVC: UIViewController {
     }
     
     func setUpEvent() {
-        let tapGestur = UITapGestureRecognizer(target: self, action: #selector(openNotification))
-        settingsView.viewNotification.addGestureRecognizer(tapGestur)
+        let tapGesturEditProfile = UITapGestureRecognizer(target: self, action: #selector(editProfileClick))
+        let tapGesturNotification = UITapGestureRecognizer(target: self, action: #selector(notificationClick))
+        let tapGesturChangePassword = UITapGestureRecognizer(target: self, action: #selector(changePasswordClick))
+        let tapGesturChangeLanguage = UITapGestureRecognizer(target: self, action: #selector(changeLanguageClick))
+        
+        settingsView.viewEditProfile.addGestureRecognizer(tapGesturEditProfile)
+        settingsView.viewChangePWD.addGestureRecognizer(tapGesturChangePassword)
+        settingsView.viewChangeLang.addGestureRecognizer(tapGesturChangeLanguage)
+        settingsView.viewNotification.addGestureRecognizer(tapGesturNotification)
     }
     
-    @objc func openNotification() {
+    @objc func editProfileClick() {
+        navigationController?.pushViewController(ParentsEditProfileVC(), animated: true)
+    }
+    
+    @objc func changePasswordClick() {
+        navigationController?.pushViewController(ChangePasswordVC(), animated: true)
+    }
+    
+    @objc func changeLanguageClick() {
+        navigationController?.pushViewController(ChangeLanguageVC(), animated: true)
+    }
+    
+    @objc func notificationClick() {
         navigationController?.pushViewController(NotificationVC(), animated: true)
     }
 

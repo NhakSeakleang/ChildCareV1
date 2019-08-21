@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		013AD755A2D897D501983A97 /* Pods_Child_Care_CenterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D3A7A126868612B743BA82 /* Pods_Child_Care_CenterUITests.framework */; };
+		4F0C8013230BDCA6005199D0 /* BabyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0C8012230BDCA6005199D0 /* BabyProfileVC.swift */; };
+		4F0C8015230BDCD1005199D0 /* BabyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0C8014230BDCD1005199D0 /* BabyProfileView.swift */; };
+		4F11492F230D1395008023C2 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11492E230D1395008023C2 /* ChangePasswordVC.swift */; };
+		4F114931230D13AF008023C2 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F114930230D13AF008023C2 /* ChangePasswordView.swift */; };
+		4F114933230D25AF008023C2 /* ChangeLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F114932230D25AF008023C2 /* ChangeLanguageVC.swift */; };
+		4F114935230D2766008023C2 /* ParentsEditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F114934230D2766008023C2 /* ParentsEditProfileVC.swift */; };
+		4F114937230D346C008023C2 /* ParentsEditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F114936230D346C008023C2 /* ParentsEditProfileView.swift */; };
 		4F2A5646230511C900C6BA40 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A5645230511C900C6BA40 /* NotificationView.swift */; };
 		4F2A5648230531F900C6BA40 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A5647230531F900C6BA40 /* MessagesView.swift */; };
 		4F2A564A2305525900C6BA40 /* MessageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A56492305525900C6BA40 /* MessageDetailVC.swift */; };
@@ -15,6 +22,7 @@
 		4F2DE723230A607E0095A657 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DE722230A607E0095A657 /* CameraVC.swift */; };
 		4F2DE725230AB38A0095A657 /* SelectBabysitterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DE724230AB38A0095A657 /* SelectBabysitterVC.swift */; };
 		4F2DE727230AB4D60095A657 /* SelectBabysitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DE726230AB4D60095A657 /* SelectBabysitterView.swift */; };
+		4F2E2B68230BC52500F7FC12 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2E2B67230BC52500F7FC12 /* CameraView.swift */; };
 		4F431FE82303CA1D003E47E0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F431FE72303CA1D003E47E0 /* SettingsView.swift */; };
 		4F431FEA23040081003E47E0 /* SelectDateTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F431FE923040081003E47E0 /* SelectDateTimeVC.swift */; };
 		4F431FEC23040119003E47E0 /* SelectDateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F431FEB23040119003E47E0 /* SelectDateTimeView.swift */; };
@@ -30,6 +38,8 @@
 		4F571AB922FBD78A00DB64DD /* CustomMarkerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F571AB822FBD78A00DB64DD /* CustomMarkerPreview.swift */; };
 		4F571ABC22FC119A00DB64DD /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F571ABB22FC119A00DB64DD /* DetailVC.swift */; };
 		4F571ABE22FC11D800DB64DD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F571ABD22FC11D800DB64DD /* DetailView.swift */; };
+		4F76D083230BFA2F00601B08 /* BabySitterProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F76D082230BFA2F00601B08 /* BabySitterProfileVC.swift */; };
+		4F76D085230BFA4D00601B08 /* BabySitterProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F76D084230BFA4D00601B08 /* BabySitterProfileView.swift */; };
 		4F7FA1AF22F3F81B0033B993 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA1AE22F3F81B0033B993 /* SignUpVC.swift */; };
 		4F7FA1B122F3F8640033B993 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA1B022F3F8640033B993 /* SignUpView.swift */; };
 		4F7FA1B522F4146F0033B993 /* ParentsHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA1B422F4146F0033B993 /* ParentsHomeVC.swift */; };
@@ -73,6 +83,13 @@
 		3361B243D522A0405AD1A8A1 /* Pods-Child Care CenterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care CenterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care CenterTests/Pods-Child Care CenterTests.release.xcconfig"; sourceTree = "<group>"; };
 		34FBE2F32AB7032375A3CE59 /* Pods-Child Care CenterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Child Care CenterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Child Care CenterUITests/Pods-Child Care CenterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		41D3A7A126868612B743BA82 /* Pods_Child_Care_CenterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Child_Care_CenterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0C8012230BDCA6005199D0 /* BabyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyProfileVC.swift; sourceTree = "<group>"; };
+		4F0C8014230BDCD1005199D0 /* BabyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyProfileView.swift; sourceTree = "<group>"; };
+		4F11492E230D1395008023C2 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		4F114930230D13AF008023C2 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		4F114932230D25AF008023C2 /* ChangeLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageVC.swift; sourceTree = "<group>"; };
+		4F114934230D2766008023C2 /* ParentsEditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsEditProfileVC.swift; sourceTree = "<group>"; };
+		4F114936230D346C008023C2 /* ParentsEditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsEditProfileView.swift; sourceTree = "<group>"; };
 		4F2A5645230511C900C6BA40 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		4F2A5647230531F900C6BA40 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		4F2A56492305525900C6BA40 /* MessageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailVC.swift; sourceTree = "<group>"; };
@@ -80,6 +97,7 @@
 		4F2DE722230A607E0095A657 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		4F2DE724230AB38A0095A657 /* SelectBabysitterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBabysitterVC.swift; sourceTree = "<group>"; };
 		4F2DE726230AB4D60095A657 /* SelectBabysitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBabysitterView.swift; sourceTree = "<group>"; };
+		4F2E2B67230BC52500F7FC12 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		4F431FE72303CA1D003E47E0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4F431FE923040081003E47E0 /* SelectDateTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateTimeVC.swift; sourceTree = "<group>"; };
 		4F431FEB23040119003E47E0 /* SelectDateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateTimeView.swift; sourceTree = "<group>"; };
@@ -95,6 +113,8 @@
 		4F571AB822FBD78A00DB64DD /* CustomMarkerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerPreview.swift; sourceTree = "<group>"; };
 		4F571ABB22FC119A00DB64DD /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailVC.swift; path = ../../View/Parents/DetailVC.swift; sourceTree = "<group>"; };
 		4F571ABD22FC11D800DB64DD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4F76D082230BFA2F00601B08 /* BabySitterProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySitterProfileVC.swift; sourceTree = "<group>"; };
+		4F76D084230BFA4D00601B08 /* BabySitterProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySitterProfileView.swift; sourceTree = "<group>"; };
 		4F7FA1AE22F3F81B0033B993 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		4F7FA1B022F3F8640033B993 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		4F7FA1B422F4146F0033B993 /* ParentsHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsHomeVC.swift; sourceTree = "<group>"; };
@@ -166,6 +186,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4F0C8011230BDC83005199D0 /* Baby */ = {
+			isa = PBXGroup;
+			children = (
+				4F0C8014230BDCD1005199D0 /* BabyProfileView.swift */,
+			);
+			path = Baby;
+			sourceTree = "<group>";
+		};
+		4F0C8016230BF96B005199D0 /* BabySitter */ = {
+			isa = PBXGroup;
+			children = (
+				4F76D084230BFA4D00601B08 /* BabySitterProfileView.swift */,
+			);
+			path = BabySitter;
+			sourceTree = "<group>";
+		};
+		4F2E2B69230BDC4E00F7FC12 /* Baby */ = {
+			isa = PBXGroup;
+			children = (
+				4F0C8012230BDCA6005199D0 /* BabyProfileVC.swift */,
+			);
+			path = Baby;
+			sourceTree = "<group>";
+		};
 		4F571ABA22FC0C3C00DB64DD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,23 +218,34 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		4F76D081230BF9B900601B08 /* BabySitter */ = {
+			isa = PBXGroup;
+			children = (
+				4F76D082230BFA2F00601B08 /* BabySitterProfileVC.swift */,
+			);
+			path = BabySitter;
+			sourceTree = "<group>";
+		};
 		4F7FA1B222F4141E0033B993 /* Parents */ = {
 			isa = PBXGroup;
 			children = (
+				4F2DE722230A607E0095A657 /* CameraVC.swift */,
+				4F11492E230D1395008023C2 /* ChangePasswordVC.swift */,
 				4F571ABB22FC119A00DB64DD /* DetailVC.swift */,
-				4F7FA1B422F4146F0033B993 /* ParentsHomeVC.swift */,
 				4F4BB01722FD456B007E9A3F /* MainController.swift */,
 				4F4BB01D22FD53BF007E9A3F /* MenuVC.swift */,
-				4FCD26EB230170C50069AA1F /* ProfileVC.swift */,
+				4F2A56492305525900C6BA40 /* MessageDetailVC.swift */,
 				4FCD26EF230174090069AA1F /* MessageVC.swift */,
 				4FCD26F12301768A0069AA1F /* NotificationVC.swift */,
-				4FCD26F3230177000069AA1F /* SettingsVC.swift */,
-				4F431FE923040081003E47E0 /* SelectDateTimeVC.swift */,
-				4F431FED23041653003E47E0 /* SelectChildredVC.swift */,
-				4F2A56492305525900C6BA40 /* MessageDetailVC.swift */,
-				4F4CC5FE23069DD7005A36A7 /* TabBarController.swift */,
-				4F2DE722230A607E0095A657 /* CameraVC.swift */,
+				4F7FA1B422F4146F0033B993 /* ParentsHomeVC.swift */,
+				4FCD26EB230170C50069AA1F /* ProfileVC.swift */,
 				4F2DE724230AB38A0095A657 /* SelectBabysitterVC.swift */,
+				4F431FED23041653003E47E0 /* SelectChildredVC.swift */,
+				4F431FE923040081003E47E0 /* SelectDateTimeVC.swift */,
+				4FCD26F3230177000069AA1F /* SettingsVC.swift */,
+				4F4CC5FE23069DD7005A36A7 /* TabBarController.swift */,
+				4F114932230D25AF008023C2 /* ChangeLanguageVC.swift */,
+				4F114934230D2766008023C2 /* ParentsEditProfileVC.swift */,
 			);
 			path = Parents;
 			sourceTree = "<group>";
@@ -198,17 +253,20 @@
 		4F7FA1B322F414280033B993 /* Parents */ = {
 			isa = PBXGroup;
 			children = (
-				4F7FA1B822F414C10033B993 /* ParentsHomeView.swift */,
+				4F2E2B67230BC52500F7FC12 /* CameraView.swift */,
+				4F114930230D13AF008023C2 /* ChangePasswordView.swift */,
 				4F571ABD22FC11D800DB64DD /* DetailView.swift */,
 				4F4BB01B22FD518F007E9A3F /* MenuView.swift */,
-				4FCD26ED230170D60069AA1F /* ProfileView.swift */,
-				4F431FE72303CA1D003E47E0 /* SettingsView.swift */,
-				4F431FEB23040119003E47E0 /* SelectDateTimeView.swift */,
-				4F431FEF2304167C003E47E0 /* SelectChildrenView.swift */,
-				4F2A5645230511C900C6BA40 /* NotificationView.swift */,
-				4F2A5647230531F900C6BA40 /* MessagesView.swift */,
 				4F2A564B2305544300C6BA40 /* MessageDetailView.swift */,
+				4F2A5647230531F900C6BA40 /* MessagesView.swift */,
+				4F2A5645230511C900C6BA40 /* NotificationView.swift */,
+				4F7FA1B822F414C10033B993 /* ParentsHomeView.swift */,
+				4FCD26ED230170D60069AA1F /* ProfileView.swift */,
 				4F2DE726230AB4D60095A657 /* SelectBabysitterView.swift */,
+				4F431FEF2304167C003E47E0 /* SelectChildrenView.swift */,
+				4F431FEB23040119003E47E0 /* SelectDateTimeView.swift */,
+				4F431FE72303CA1D003E47E0 /* SettingsView.swift */,
+				4F114936230D346C008023C2 /* ParentsEditProfileView.swift */,
 			);
 			path = Parents;
 			sourceTree = "<group>";
@@ -271,10 +329,12 @@
 		4F94AA4C22F2C9A80063CE99 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4FB93A3722FAE00A00C958F6 /* Custom */,
-				4F7FA1B322F414280033B993 /* Parents */,
 				4F94AA4E22F2C9E00063CE99 /* LoginView.swift */,
 				4F7FA1B022F3F8640033B993 /* SignUpView.swift */,
+				4F0C8011230BDC83005199D0 /* Baby */,
+				4F0C8016230BF96B005199D0 /* BabySitter */,
+				4FB93A3722FAE00A00C958F6 /* Custom */,
+				4F7FA1B322F414280033B993 /* Parents */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,9 +342,11 @@
 		4F94AA4D22F2C9B30063CE99 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4F7FA1B222F4141E0033B993 /* Parents */,
 				4F94AA2022F2BAF50063CE99 /* LoginVC.swift */,
 				4F7FA1AE22F3F81B0033B993 /* SignUpVC.swift */,
+				4F2E2B69230BDC4E00F7FC12 /* Baby */,
+				4F76D081230BF9B900601B08 /* BabySitter */,
+				4F7FA1B222F4141E0033B993 /* Parents */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -611,16 +673,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F114937230D346C008023C2 /* ParentsEditProfileView.swift in Sources */,
 				4F7FA1B922F414C10033B993 /* ParentsHomeView.swift in Sources */,
+				4F114931230D13AF008023C2 /* ChangePasswordView.swift in Sources */,
 				4F4CC5FF23069DD7005A36A7 /* TabBarController.swift in Sources */,
 				4F431FE82303CA1D003E47E0 /* SettingsView.swift in Sources */,
+				4F2E2B68230BC52500F7FC12 /* CameraView.swift in Sources */,
 				4F431FEC23040119003E47E0 /* SelectDateTimeView.swift in Sources */,
 				4F4BB01622FD30FC007E9A3F /* MenuOption.swift in Sources */,
 				4F2DE727230AB4D60095A657 /* SelectBabysitterView.swift in Sources */,
+				4F11492F230D1395008023C2 /* ChangePasswordVC.swift in Sources */,
 				4FB93A3922FAE03700C958F6 /* CustomMarkerView.swift in Sources */,
 				4F431FEA23040081003E47E0 /* SelectDateTimeVC.swift in Sources */,
 				4F2DE723230A607E0095A657 /* CameraVC.swift in Sources */,
 				4F571AB922FBD78A00DB64DD /* CustomMarkerPreview.swift in Sources */,
+				4F0C8013230BDCA6005199D0 /* BabyProfileVC.swift in Sources */,
 				4F7FA1AF22F3F81B0033B993 /* SignUpVC.swift in Sources */,
 				4F431FF02304167C003E47E0 /* SelectChildrenView.swift in Sources */,
 				4F2A5648230531F900C6BA40 /* MessagesView.swift in Sources */,
@@ -629,8 +696,10 @@
 				4F571ABE22FC11D800DB64DD /* DetailView.swift in Sources */,
 				4F571ABC22FC119A00DB64DD /* DetailVC.swift in Sources */,
 				4F2A564C2305544300C6BA40 /* MessageDetailView.swift in Sources */,
+				4F114935230D2766008023C2 /* ParentsEditProfileVC.swift in Sources */,
 				4F94AA4F22F2C9E00063CE99 /* LoginView.swift in Sources */,
 				4F431FEE23041653003E47E0 /* SelectChildredVC.swift in Sources */,
+				4F76D083230BFA2F00601B08 /* BabySitterProfileVC.swift in Sources */,
 				4F4BB01A22FD47A0007E9A3F /* Protocols.swift in Sources */,
 				4FCD26F4230177000069AA1F /* SettingsVC.swift in Sources */,
 				4F4BB01C22FD518F007E9A3F /* MenuView.swift in Sources */,
@@ -639,9 +708,12 @@
 				4F2A564A2305525900C6BA40 /* MessageDetailVC.swift in Sources */,
 				4F7FA1B522F4146F0033B993 /* ParentsHomeVC.swift in Sources */,
 				4F94AA2122F2BAF50063CE99 /* LoginVC.swift in Sources */,
+				4F0C8015230BDCD1005199D0 /* BabyProfileView.swift in Sources */,
 				4F4BB01822FD456B007E9A3F /* MainController.swift in Sources */,
 				4F2A5646230511C900C6BA40 /* NotificationView.swift in Sources */,
+				4F114933230D25AF008023C2 /* ChangeLanguageVC.swift in Sources */,
 				4FCD26F0230174090069AA1F /* MessageVC.swift in Sources */,
+				4F76D085230BFA4D00601B08 /* BabySitterProfileView.swift in Sources */,
 				4FCD26EE230170D60069AA1F /* ProfileView.swift in Sources */,
 				4F4BB02022FD554F007E9A3F /* MenuCell.swift in Sources */,
 				4F94AA1F22F2BAF50063CE99 /* AppDelegate.swift in Sources */,

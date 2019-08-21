@@ -43,6 +43,7 @@ class MessagesView: UIView {
         lb.text = "⋮"
         lb.textAlignment = .center
         lb.font = UIFont.boldSystemFont(ofSize: 30)
+        lb.isUserInteractionEnabled = true
         return lb
     }()
     

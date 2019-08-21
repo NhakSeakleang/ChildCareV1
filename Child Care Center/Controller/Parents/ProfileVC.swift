@@ -27,6 +27,12 @@ class ProfileVC: UIViewController {
     
     func setUpEvent() {
         profileView.btnLogout.addTarget(self, action: #selector(logout), for: .touchUpInside)
+        let child1Tap = UITapGestureRecognizer(target: self, action: #selector(child1Click))
+        profileView.viewChildren1.addGestureRecognizer(child1Tap)
+    }
+    
+    @objc func child1Click() {
+        navigationController?.pushViewController(BabyProfileVC(), animated: true)
     }
     
     @objc func logout() {
