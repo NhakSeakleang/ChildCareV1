@@ -25,6 +25,17 @@ class ChangePasswordVC: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
         view = changePasswordView
+        
+        changePasswordView.tfPassword.delegate = self
+        changePasswordView.tfNewPassword.delegate = self
+        changePasswordView.tfConfirmNewPassword.delegate = self
     }
 
+}
+
+extension ChangePasswordVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

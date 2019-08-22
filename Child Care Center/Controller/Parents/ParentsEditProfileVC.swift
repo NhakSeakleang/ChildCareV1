@@ -62,22 +62,25 @@ class ParentsEditProfileVC: UIViewController {
 
 extension ParentsEditProfileVC: UITextFieldDelegate {
     
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         let tf = textField as? CustomTextField
         tf?.bottomBorder.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         if tf?.tag == 1 {
-            tf?.leftView?.tintColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+            tf?.rightView?.tintColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
             chooseSex(textField)
         }
-        return true
     }
     
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        (textField as? CustomTextField)?.bottomBorder.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
-//    }
-    
     func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.tag == 1 {
+            textField.rightView?.tintColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        }
         (textField as? CustomTextField)?.bottomBorder.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 }
